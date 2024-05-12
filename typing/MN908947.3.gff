@@ -1,13 +1,19 @@
 ##gff-version 3
 ##sequence-region   MN908947.3 1 29903
 #!genome-build ENA ASM985889v3
-#!genome-version ASM985889v3
-#!genome-date 2020-01
+#!genome-version ASM985889v3 - Mark Cheng (tkmc2) edited version
+#!genome-date 2024-05-11
+#!genome-addition1 ORF3c
+#!genome-addition1-notes leaky-scanned on ORF3a sgmRNA at 1:1 (innate sensing inhibition by modulating mitochondria and MAVS)
+#!genome-addition1-references Stewart iScience2023; Muller EMBO rep 2023
+#!genome-addition2 ORF9b
+#!genome-addition2-notes innate antiviral immunity modulator (targets TOM70 - a import receptor for mitochondrial precursors)
+#!genome_addition2-references Finkel Nature 2021; Ayinde Biochimie 2022; Gao Nat. Comms. 2021; https://github.com/nextstrain/nextclade/blob/master/data/sars-cov-2/genemap.gff
 #!genome-build-accession NCBI:GCA_009858895.3
 MN908947.3	ASM985889v3	region	1	29903	.	.	.	ID=region:MN908947.3;Alias=NC_045512.2,NC_045512v2
 ####
 MN908947.3	ensembl	gene	266	13483	.	+	.	ID=gene:ENSSASG00005000003;Name=ORF1ab;biotype=protein_coding;description=ORF1a polyprotein%3BORF1ab polyprotein [Source:NCBI gene (formerly Entrezgene)%3BAcc:43740578];gene_id=ENSSASG00005000003;logic_name=ensembl_covid;version=1
-MN908947.3	ensembl	mRNA	266	13483	.	+	.	ID=transcript:ENSSAST00005000003;Parent=gene:ENSSASG00005000003;Name=ORF1a;biotype=protein_coding;transcript_id=ENSSAST00005000003;version=1
+MN908947.3	ensembl	mRNA	266	13483	.	+	.	ID=transcript: ;Parent=gene:ENSSASG00005000003;Name=ORF1a;biotype=protein_coding;transcript_id=ENSSAST00005000003;version=1
 MN908947.3	ensembl	exon	266	13483	.	+	.	Parent=transcript:ENSSAST00005000003;Name=ENSSASE00005000003;constitutive=1;ensembl_end_phase=0;ensembl_phase=0;exon_id=ENSSASE00005000003;rank=1;version=1
 MN908947.3	ensembl	CDS	266	13483	.	+	0	ID=CDS:ENSSASP00005000003;Parent=transcript:ENSSAST00005000003;protein_id=ENSSASP00005000003
 ####
@@ -25,6 +31,13 @@ MN908947.3	ensembl	gene	25393	26220	.	+	.	ID=gene:ENSSASG00005000006;Name=ORF3a;
 MN908947.3	ensembl	mRNA	25393	26220	.	+	.	ID=transcript:ENSSAST00005000006;Parent=gene:ENSSASG00005000006;Name=ORF3a;biotype=protein_coding;transcript_id=ENSSAST00005000006;version=1
 MN908947.3	ensembl	exon	25393	26220	.	+	.	Parent=transcript:ENSSAST00005000006;Name=ENSSASE00005000006;constitutive=1;ensembl_end_phase=0;ensembl_phase=0;exon_id=ENSSASE00005000006;rank=1;version=1
 MN908947.3	ensembl	CDS	25393	26220	.	+	0	ID=CDS:ENSSASP00005000006;Parent=transcript:ENSSAST00005000006;protein_id=ENSSASP00005000006
+####
+####
+MN908947.3	ensembl	gene	25457	25582	.	+	.	ID=gene:ORF3c;Name=ORF3c;biotype=protein_coding;description=ORF3c protein;gene_id=ORF3c;logic_name=ensembl_covid;version=1
+MN908947.3	ensembl	mRNA	25457	25582	.	+	.	ID=transcript:ORF3c;Parent=gene:ORF3c;Name=ORF3c;biotype=protein_coding;transcript_id=ORF3c;version=1
+MN908947.3	ensembl	exon	25457	25582	.	+	.	Parent=transcript:ORF3c;Name=ORF3c;constitutive=1;ensembl_end_phase=0;ensembl_phase=0;exon_id=ORF3c;rank=1;version=1
+MN908947.3	ensembl	CDS	25457	25582	.	+	0	ID=CDS:ORF3c;Parent=transcript:ORF3c;protein_id=ORF3c
+####
 ####
 MN908947.3	ensembl	gene	26245	26472	.	+	.	ID=gene:ENSSASG00005000010;Name=E;biotype=protein_coding;description=envelope protein [Source:NCBI gene (formerly Entrezgene)%3BAcc:43740570];gene_id=ENSSASG00005000010;logic_name=ensembl_covid;version=1
 MN908947.3	ensembl	mRNA	26245	26472	.	+	.	ID=transcript:ENSSAST00005000010;Parent=gene:ENSSASG00005000010;Name=E;biotype=protein_coding;transcript_id=ENSSAST00005000010;version=1
@@ -60,6 +73,13 @@ MN908947.3	ensembl	gene	28274	29533	.	+	.	ID=gene:ENSSASG00005000005;Name=N;biot
 MN908947.3	ensembl	mRNA	28274	29533	.	+	.	ID=transcript:ENSSAST00005000005;Parent=gene:ENSSASG00005000005;Name=N;biotype=protein_coding;transcript_id=ENSSAST00005000005;version=1
 MN908947.3	ensembl	exon	28274	29533	.	+	.	Parent=transcript:ENSSAST00005000005;Name=ENSSASE00005000005;constitutive=1;ensembl_end_phase=0;ensembl_phase=0;exon_id=ENSSASE00005000005;rank=1;version=1
 MN908947.3	ensembl	CDS	28274	29533	.	+	0	ID=CDS:ENSSASP00005000005;Parent=transcript:ENSSAST00005000005;protein_id=ENSSASP00005000005
+####
+####
+MN908947.3	ensembl	gene	28284	28577	.	+	.	ID=gene:ORF9b;Name=ORF9b;biotype=protein_coding;description=ORF9b protein;gene_id=ORF9b;logic_name=ensembl_covid;version=1
+MN908947.3	ensembl	mRNA	28284	28577	.	+	.	ID=transcript:ORF9b;Parent=gene:ORF9b;Name=ORF9b;biotype=protein_coding;transcript_id=ORF9b;version=1
+MN908947.3	ensembl	exon	28284	28577	.	+	.	Parent=transcript:ORF9b;Name=ORF9b;constitutive=1;ensembl_end_phase=0;ensembl_phase=0;exon_id=ORF9b;rank=1;version=1
+MN908947.3	ensembl	CDS	28284	28577	.	+	0	ID=CDS:ORF9b;Parent=transcript:ORF9b;protein_id=ORF9b
+####
 ####
 MN908947.3	ensembl	gene	29558	29674	.	+	.	ID=gene:ENSSASG00005000013;Name=ORF10;biotype=protein_coding;description=ORF10 protein [Source:NCBI gene (formerly Entrezgene)%3BAcc:43740576];gene_id=ENSSASG00005000013;logic_name=ensembl_covid;version=1
 MN908947.3	ensembl	mRNA	29558	29674	.	+	.	ID=transcript:ENSSAST00005000013;Parent=gene:ENSSASG00005000013;Name=ORF10;biotype=protein_coding;transcript_id=ENSSAST00005000013;version=1
