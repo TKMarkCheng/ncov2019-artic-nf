@@ -13,7 +13,7 @@
 MN908947.3	ASM985889v3	region	1	29903	.	.	.	ID=region:MN908947.3;Alias=NC_045512.2,NC_045512v2
 ####
 MN908947.3	ensembl	gene	266	13483	.	+	.	ID=gene:ENSSASG00005000003;Name=ORF1ab;biotype=protein_coding;description=ORF1a polyprotein%3BORF1ab polyprotein [Source:NCBI gene (formerly Entrezgene)%3BAcc:43740578];gene_id=ENSSASG00005000003;logic_name=ensembl_covid;version=1
-MN908947.3	ensembl	mRNA	266	13483	.	+	.	ID=transcript: ;Parent=gene:ENSSASG00005000003;Name=ORF1a;biotype=protein_coding;transcript_id=ENSSAST00005000003;version=1
+MN908947.3	ensembl	mRNA	266	13483	.	+	.	ID=transcript:ENSSAST00005000003;Parent=gene:ENSSASG00005000003;Name=ORF1a;biotype=protein_coding;transcript_id=ENSSAST00005000003;version=1
 MN908947.3	ensembl	exon	266	13483	.	+	.	Parent=transcript:ENSSAST00005000003;Name=ENSSASE00005000003;constitutive=1;ensembl_end_phase=0;ensembl_phase=0;exon_id=ENSSASE00005000003;rank=1;version=1
 MN908947.3	ensembl	CDS	266	13483	.	+	0	ID=CDS:ENSSASP00005000003;Parent=transcript:ENSSAST00005000003;protein_id=ENSSASP00005000003
 ####
