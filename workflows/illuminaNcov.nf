@@ -11,7 +11,7 @@ include {readMapping} from '../modules/illumina.nf'
 include {trimPrimerSequences} from '../modules/illumina.nf' 
 include {getDepths} from '../modules/illumina.nf'
 include {callVariants} from '../modules/illumina.nf'
-// include {freyjaDemix} from '../modules/illumina.nf'
+include {freyjaDemix} from '../modules/illumina.nf'
 include {makeConsensus} from '../modules/illumina.nf' 
 // include {callLineage} from '../modules/illumina.nf'
 include {cramToFastq} from '../modules/illumina.nf'
@@ -100,7 +100,7 @@ workflow sequenceAnalysis {
 
       getDepths(trimPrimerSequences.out.ptrim.combine(ch_preparedRef.map{ it[0] }))
 
-      // freyjaDemix(callVariants.out.variants.join(getDepths.out.depths))
+      freyjaDemix(callVariants.out.variants.join(getDepths.out.depths))
 
       makeConsensus(trimPrimerSequences.out.ptrim)
 
